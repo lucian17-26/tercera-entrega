@@ -1,0 +1,16 @@
+/*aplico el MAPA en cuadro de medidas */
+$cuadro:(
+    primer-fila: rgb(79, 79, 194),
+    segunda-fila: rgb(62, 62, 148),
+    tercer-fila: rgb(42, 65, 126),
+    cuarta-fila: rgba(56, 212, 56, 0.671),
+    quinta-fila: rgba(82, 110, 15, 0.767),
+    sexta-fila: rgba(93, 110, 31, 0.658),
+);
+
+/*Lista utilizando el MAPA*/
+@each $clave, $valor in $cuadro {
+    .tr-#{$clave}{
+        background-color: $valor;
+    }
+}

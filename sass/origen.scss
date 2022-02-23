@@ -1,0 +1,233 @@
+/*esto es un comentario*/
+@import "margen";
+@import "exted-mixin";
+@import "each";
+
+/* este grid es de el index*/
+#gridArea {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera "
+        "imag imag"
+        "cont formu"
+        "pie pie";
+}
+
+/*este grid es de las otras paginas */
+.gridArea {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "imag imag imag"
+        "video video video"
+        "cont cont mapa"
+        "pie pie pie";
+    grid-template-columns: 30% 30% auto;
+}
+
+header {
+    grid-area: cabecera;
+    /*background-color: cornflowerblue;*/
+    margin-bottom: 70px;
+    height: 130px;
+    h1 {
+        text-align-last: center;
+        padding: 25px;
+    }
+    nav {
+        list-style-type: none;
+        font-style: italic;
+        span {
+            width: 175px;
+            height: 30px;
+            background-color: yellow;
+            border: 2px solid blue;
+            &:hover{
+                background-color: blue;
+                color: yellow;
+                border: 2px solid yellow;
+            }
+        }
+        span a {
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            color: blue;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background-color: blue;
+                color: yellow;
+            
+            }
+        }
+    }
+    
+}
+
+main {
+    grid-area: imag;
+    .parrafo1 {
+        text-align-last: center;
+        background-image: linear-gradient(white, gray);
+        margin-left: 90px;
+        margin-right: 90px;
+        padding: 15px;
+    }
+    .imagen1 {
+        position: relative;
+        width: 100%;
+        height: 700px;
+    }
+}
+
+aside {
+    grid-area: cont;
+    .texto {
+        background-image: linear-gradient(white, gray);
+        margin: 10px 30% 10px 90px;
+        padding: 6px 6px 6px 25px;
+    }
+    /* Estilos de listas*/
+    .estiloLista{
+    list-style-type: disc;
+    font-weight: bold;
+    }
+    .paquetes {
+    background-color: royalblue;
+    margin-left: 40px;
+    margin-right: 70%;
+    padding-left: 15px;
+    }
+}
+
+form {
+    grid-area: formu;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+article {
+    grid-area: video;
+    
+}
+
+section {
+    grid-area: mapa;
+
+}
+
+footer {
+    grid-area: pie;
+    height: 150px;
+    background-image: linear-gradient(to left, blue, darkgray);
+    padding: 20px;
+    .ig {
+        height: 50px;
+        margin: 15px;
+    }
+    
+    .centradoFlex {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .relleno2 {
+        text-align: center;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
+
+body {
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: 100%;
+
+}
+
+/*ESTILOS GRADIENTES*/
+
+/*ENCABEZADO*/
+#estiloGradiente {
+    background-image: linear-gradient(to right, #2b398a, #25838a);
+}
+
+
+
+.padreFlex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.titulo2 {
+    background-image: linear-gradient(to left, green, rgb(212, 119, 13));
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+/* CONTENIDO DE LA PAGINA*/
+
+/* Relleno de pagina*/
+.relleno {
+    background-image: linear-gradient(gray, rgb(13, 85, 85));
+    padding: 14px;
+    width: 60%;
+    margin-bottom: 60px;
+    border: 8px solid black;
+    color: #1e2238 solid;
+}
+
+#rellenoCentrado {
+    display: flex;
+    justify-content: center;
+}
+
+/* ESTILOS DEL FORMULARIO*/
+fieldset {
+    border: double white 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    margin-right: 4%;
+    background-image: url(../imagenes/quebradaDeHumahuaca2.png.jpg);
+    background-size: 100%;
+}
+
+
+legend {
+    margin: 15px;
+    padding: 7px;
+    background-color: chocolate;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*FINAL DE LA PAGINA*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*ESTE PERTENECE A LOS OTROS HTML*/
+@import "paginassecundarias";
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/* RESPONSIVE TABLET*/
+@import "tablet";
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/* RESPONSIVE SMARTPHONE*/
+@import "smartphone";

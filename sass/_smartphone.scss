@@ -1,0 +1,284 @@
+
+@media (max-width: 599px) {
+    #gridArea {
+        display: grid;
+        grid-template-areas:
+            " cabecera"
+            " imag"
+            " cont"
+            " formu"
+            " pie";
+    }
+
+    .gridArea {
+        display: grid;
+        grid-template-areas:
+            "cabecera "
+            "imag "
+            "video"
+            "cont"
+            "mapa"
+            "pie";
+        grid-template-columns: auto;
+    }
+
+    article {
+        grid-area: video;
+    }
+
+    aside {
+        grid-area: cont;
+    }
+
+    section {
+        grid-area: mapa;
+    }
+
+    header {
+        grid-area: cabecera;
+        margin-bottom: 20px;
+        height: 280px;
+        border-bottom: 5px solid;
+    }
+
+    form {
+        grid-area: formu;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    footer {
+        grid-area: pie;
+        height: 130px;
+        background-color: rgb(194, 148, 20);
+        padding: 25px;
+    }
+
+    /*estilos de gradientes */
+    /*ENCABEZADO*/
+    #estiloGradiente {
+        background-image: linear-gradient(to right, #cf8d29, #c8e90c);
+    }
+
+    /* ENCABEZADO*/
+
+    h1 {
+        width: 70%;
+        font-size: 16px;
+        background-color: burlywood;
+        margin: 20px auto 15px;
+        padding: 8px;
+        border: #0f3f1b solid 1px;
+        border-radius: 10%;
+        text-align: center;
+    }
+
+
+    
+    .padreFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+
+    span a {
+        text-decoration: none;
+        color: blue;
+        height: 5px;
+        padding: 2px 5px;
+        font-size: 12px;
+
+    }
+
+    span a:hover {
+        background-color: blue;
+        color: yellow;
+    }
+
+
+    .titulo2 {
+        background-color: rgb(187, 218, 52);
+        margin-top: 30px;
+        margin-right: 20%;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-align: center;
+        text-transform: capitalize;
+
+    }
+
+    .imagen1 {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    .parrafo1 {
+        text-align-last: center;
+        background-color: rgb(201, 169, 169);
+        margin-left: 90px;
+        margin-right: 90px;
+        padding: 6px;
+        font-size: 12px;
+        border: 3px solid black;
+    }
+
+    .texto {
+        background-color: rgb(156, 116, 116);
+        margin: 10px 30% 10px 90px;
+        padding: 6px 6px 6px 25px;
+        font-size: 12px;
+    }
+
+
+    /* CONTENIDO DE LA PAGINA*/
+    .paquetes {
+        background-color: rgb(121, 226, 50);
+        margin-left: 40px;
+        margin-right: 65%;
+        padding-left: 15px;
+        font-size: 14px;
+    }
+
+
+    /* ESTILOS DEL FORMULARIO*/
+    fieldset {
+        border: double rgb(90, 136, 206) 10px;
+        margin-bottom: 20px;
+        margin-left: 4%;
+        padding: 15px;
+        background-image: url(../imagenes/quebradaDeHumahuaca2.png.jpg);
+        background-size: 100%;
+    }
+
+    legend {
+        padding: 4px;
+        background-color: rgb(229, 233, 20);
+        font-size: 12px;
+    }
+
+    /*FINAL DE LA PAGINA*/
+
+    .ig {
+        height: 30px;
+        margin: 10px;
+    }
+
+    .relleno2 {
+        text-align: center;
+        margin-right: 20%;
+        margin-left: 20%;
+        font-size: 12px;
+    }
+
+
+    h2 {
+        text-align-last: center;
+        background-color: rgb(112, 45, 45);
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-bottom: 40px;
+        padding: 12px;
+        border: 6px solid black;
+        font-size: 14px;
+    }
+
+    /* ESTILO DE IMAGENES ENCABEZADO*/
+    /* Esto se encuentra dentro de Main*/
+    .imagenesSecundarias {
+        text-align: center;
+        margin-left: 11%;
+        margin-right: 11%;
+        margin-bottom: 30px;
+
+    }
+
+    /* Div, mapa de la pagina  */
+
+    .map {
+        margin-top: 40px;
+        border: 5px solid black;
+        margin-bottom: 30px;
+    }
+
+
+
+    /* Aside, se encuentra contenido de pagina*/
+
+    .parrafo {
+        background-color: rgb(156, 116, 116);
+        font-weight: bold;
+        padding: 12px;
+        margin: 0 20% 20px 20px;
+        font-size: 13px;
+    }
+
+    .parrafo2 {
+
+        background-color: rgb(46, 156, 88);
+        margin: 0 40% 5px 10%;
+        padding: 10px;
+        margin-left: 60px;
+        font-size: 13px;
+    }
+
+    .lista {
+        background-color: cornsilk;
+        margin: 0 35% 20px 30%;
+        padding: 12px;
+        padding-left: 30px;
+        list-style-type: disc;
+        font-size: 12px;
+    }
+
+    .cuadro {
+        margin-bottom: 0;
+        background-color: cadetblue;
+        font-weight: bold;
+        border: 3px solid black;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 1px;
+    }
+
+    /* Estilos de listas*/
+    .estiloLista {
+        list-style-type: disc;
+        font-weight: bold;
+    }
+
+
+    /*FINAL DE LA PAGINA*/
+
+    .ig {
+        height: 30px;
+        margin: 10px;
+    }
+
+    .centradoFlex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .relleno2 {
+        text-align: center;
+        margin-right: 20%;
+        margin-left: 20%;
+        font-size: 12px;
+    }
+
+
+}

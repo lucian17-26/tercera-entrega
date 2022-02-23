@@ -1,0 +1,79 @@
+h2 {
+    text-align-last: center;
+    background-image: linear-gradient(white, gray);
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 40px;
+    padding: 12px;
+    border: 6px solid black;
+}
+
+
+/* article de la pagina, solo esta el video de you tube*/
+.estiloFlex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+/* ESTILO DE IMAGENES ENCABEZADO*/
+/* Esto se encuentra dentro de Main*/
+.imagenesSecundarias {
+    text-align: center;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-bottom: 30px;
+}
+
+/* Section, mapa de la pagina  */
+
+.map {
+    margin-top: 10%;
+    border: 5px solid black;
+}
+
+/* Aside, se encuentra contenido de pagina*/
+
+.parrafo {
+    background-image: linear-gradient(to left, green, rgb(212, 119, 13));
+    font-weight: bold;
+    padding: 12px;
+    margin: 0 0 20px 20px;
+}
+
+.parrafo2 {
+    background-image: linear-gradient(to right, rgba(22, 37, 104, 0.705), rgba(90, 33, 92, 0.822));
+
+    margin: 0 30% 5px 10%;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+.lista {
+    background-image: linear-gradient(white, rgb(82, 82, 82));
+    margin: 0 20% 20px 300px;
+    padding: 12px;
+    padding-left: 30px;
+    list-style-type: disc;
+}
+
+.cuadro {
+    /*margin-left: 200px;*/
+    margin-bottom: 40px;
+    background-color: cadetblue;
+
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: 3px;
+}
+
+/* Estilos de listas*/
+.estiloLista {
+    list-style-type: disc;
+    font-weight: bold;
+}

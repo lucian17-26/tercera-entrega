@@ -1,0 +1,30 @@
+/***********************************************
+Exted y Mixin
+/***********************************************/
+/*EXTEND*/
+.detalle {
+    background-color: whitesmoke;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 65%;
+}
+
+.detalle2{
+    @extend .detalle;
+    margin-right: 75%;
+}
+
+/*MIXIN*/
+@mixin tamañio ($anchura, $altura) {
+    width: $anchura;
+    height: $altura;
+}
+/*Esta clase le pertenece a los videos de you tube de los HTML*/
+.video{
+    @include tamañio(660px,415px )
+}
+/*Esta clase le pertecene a los mapas de los HTML*/
+.map{
+    @include tamañio(390px,290px )
+}
